@@ -19,10 +19,10 @@ const Home = () => {
   const [city, setCity] = useState([
     {
       city: {
-        city: "Raipur",
+        city: "Hyderabad",
         connection: {
           selected: 0,
-          connections: ["Residential", "Commercial"],
+          connections: ["Residential"],
         },
         month: {
           selected: "1",
@@ -109,7 +109,7 @@ const Home = () => {
     placeholder: (provided, state) => ({
       ...provided,
       color: "#fff",
-      fontSize: "24px",
+      fontSize: "22px",
       fontWeight: "600",
       letterSpacing: "0.8px",
     }),
@@ -125,7 +125,7 @@ const Home = () => {
     singleValue: (provided, state) => ({
       ...provided,
       color: "#fff",
-      fontSize: "18px",
+      fontSize: "22px",
       fontWeight: "550",
       letterSpacing: "0.7px",
     }),
@@ -277,7 +277,7 @@ const Home = () => {
         <Select
           options={options}
           styles={styles}
-          placeholder={"Raipur"}
+          placeholder={"Hyderabad"}
           onChange={handleFilterChange}
         />
       </div>
