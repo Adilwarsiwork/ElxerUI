@@ -482,7 +482,7 @@ export const plans = [
           cap: "0",
           data: "UNLIMITED DATA",
           connection: "0",
-          isott: "",
+          isott: "8 OTT APPS",
         },
         {
           name: "BONANZA",
@@ -927,7 +927,7 @@ export const plans = [
           cap: "0",
           data: "UNLIMITED DATA",
           connection: "0",
-          isott: "",
+          isott: "8 OTT APPS",
         },
         {
           name: "BONANZA",
@@ -1372,7 +1372,7 @@ export const plans = [
           cap: "0",
           data: "UNLIMITED DATA",
           connection: "0",
-          isott: "",
+          isott: "8 OTT APPS",
         },
         {
           name: "BONANZA",
@@ -2011,7 +2011,7 @@ export const plans = [
           cap: "0",
           data: "UNLIMITED DATA",
           connection: "0",
-          isott: "",
+          isott: "8 OTT APPS",
         },
         {
           name: "BONANZA",
@@ -2456,7 +2456,7 @@ export const plans = [
           cap: "0",
           data: "UNLIMITED DATA",
           connection: "0",
-          isott: "",
+          isott: "8 OTT APPS",
         },
         {
           name: "BONANZA",
@@ -2861,7 +2861,7 @@ export const plans = [
           cap: "0",
           data: "UNLIMITED DATA",
           connection: "0",
-          isott: "",
+          isott: "8 OTT APPS",
         },
       ],
       month6: [
@@ -3111,7 +3111,7 @@ export const plans = [
           cap: "0",
           data: "UNLIMITED DATA",
           connection: "0",
-          isott: "",
+          isott: "8 OTT APPS",
         },
       ],
       month6: [
@@ -3360,7 +3360,7 @@ export const plans = [
           cap: "0",
           data: "UNLIMITED DATA",
           connection: "0",
-          isott: "",
+          isott: "8 OTT APPS",
         },
       ],
       month6: [
@@ -3609,7 +3609,7 @@ export const plans = [
           cap: "0",
           data: "UNLIMITED DATA",
           connection: "0",
-          isott: "",
+          isott: "8 OTT APPS",
         },
       ],
       month6: [
@@ -3858,7 +3858,7 @@ export const plans = [
           cap: "0",
           data: "UNLIMITED DATA",
           connection: "0",
-          isott: "",
+          isott: "8 OTT APPS",
         },
       ],
       month6: [
@@ -4307,7 +4307,7 @@ export const plans = [
           cap: "0",
           data: "UNLIMITED DATA",
           connection: "0",
-          isott: "",
+          isott: "8 OTT APPS",
         },
       ],
       month6: [
@@ -4805,7 +4805,7 @@ export const plans = [
           cap: "0",
           data: "UNLIMITED DATA",
           connection: "0",
-          isott: "",
+          isott: "8 OTT APPS",
         },
       ],
       month6: [
@@ -5054,7 +5054,7 @@ export const plans = [
           cap: "0",
           data: "UNLIMITED DATA",
           connection: "0",
-          isott: "",
+          isott: "8 OTT APPS",
         },
       ],
       month6: [
@@ -5303,7 +5303,7 @@ export const plans = [
           cap: "0",
           data: "UNLIMITED DATA",
           connection: "0",
-          isott: "",
+          isott: "8 OTT APPS",
         },
       ],
       month6: [
@@ -5552,7 +5552,7 @@ export const plans = [
           cap: "0",
           data: "UNLIMITED DATA",
           connection: "0",
-          isott: "",
+          isott: "8 OTT APPS",
         },
       ],
       month6: [
@@ -5801,7 +5801,7 @@ export const plans = [
           cap: "0",
           data: "UNLIMITED DATA",
           connection: "0",
-          isott: "",
+          isott: "8 OTT APPS",
         },
       ],
       month6: [
