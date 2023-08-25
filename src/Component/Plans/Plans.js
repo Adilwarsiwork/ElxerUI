@@ -19,10 +19,10 @@ const Home = () => {
   const [city, setCity] = useState([
     {
       city: {
-        city: "Hyderabad",
+        city: "Raipur",
         connection: {
           selected: 0,
-          connections: ["Residential"],
+          connections: ["Residential", "Commercial"],
         },
         month: {
           selected: "1",
@@ -36,14 +36,21 @@ const Home = () => {
       },
     },
   ]);
-  const [plan, setPlan] = useState(plans[1]?.month1);
+  const [plan, setPlan] = useState(plans[2].residentioal.month1);
+
+  const [filterdetails, setFilterdetails] = useState({
+    city: "Hyderabad",
+    connectiontype: "RESIDENTIOAL",
+    month: "month1",
+  });
+
   // console.log(plan.length);
 
   useEffect(() => {
     let y = plans.filter((val) => {
       return city[0].city.city === val.city;
     });
-    setPlan(y[0].month1);
+    setPlan(y[0].residentioal.month1);
   }, [city]);
 
   const residential = useRef();
@@ -173,11 +180,19 @@ const Home = () => {
   };
 
   const handleFilterChange = (e) => {
-    console.log(e.value);
+    console.log(e);
     let x = filter.filter((val, index) => {
       return val.city.city === e.value;
     });
     setCity(x);
+
+    setFilterdetails((prevalues) => {
+      return {
+        ...prevalues,
+        connectiontype: "RESIDENTIOAL",
+        city: e.value,
+      };
+    });
 
     residential.current.className = "active-connection-type";
     if (!(city[0].city.city === "Kanker")) {
@@ -186,20 +201,21 @@ const Home = () => {
       month12.current.className = "";
       month1.current.className = "active-duration-type";
     }
-    setPlan(plans[2]?.month1);
+    setPlan(plans[2]?.residentioal.month1);
   };
 
   const setplandetail = () => {
     let y = plans.filter((val) => {
       return city[0].city.city === val.city;
     });
-    setPlan(y[0].month1);
+    setPlan(y[0].residentioal.month1);
   };
 
   const handlClickOne_conditionFirst = (e) => {
     if (e.target.innerText === "RESIDENTIOAL") {
       console.log(city);
       residential.current.className = "active-connection-type";
+      console.log(filterdetails);
     }
   };
 
@@ -211,7 +227,13 @@ const Home = () => {
       month6.current.className = "";
       month12.current.className = "";
       month1.current.className = "active-duration-type";
-      setPlan(plans[2]?.month1);
+      setPlan(plans[2]?.residentioal.month1);
+      setFilterdetails((prevalues) => {
+        return {
+          ...prevalues,
+          connectiontype: "RESIDENTIOAL",
+        };
+      });
     } else {
       residential.current.className = "";
       commercial.current.className = "active-connection-type";
@@ -219,50 +241,99 @@ const Home = () => {
       month6.current.className = "";
       month12.current.className = "";
       month1.current.className = "active-duration-type";
-      setPlan(plans[2]?.month1);
+      setPlan(plans[2]?.commercial.month1);
+      setFilterdetails((prevalues) => {
+        return {
+          ...prevalues,
+          connectiontype: "COMMERCIAL",
+        };
+      });
     }
   };
   const handlClickTwo = (e) => {
     if (e.target.innerText === "1 MONTH") {
-      month3.current.className = "";
-      month6.current.className = "";
-      month12.current.className = "";
-      month1.current.className = "active-duration-type";
-      let x = plans.filter((val) => {
-        return city[0].city.city === val.city;
-      });
-      setPlan(x[0].month1);
-      console.log(x[0].month1);
+      if (filterdetails.connectiontype === "RESIDENTIOAL") {
+        month3.current.className = "";
+        month6.current.className = "";
+        month12.current.className = "";
+        month1.current.className = "active-duration-type";
+        let x = plans.filter((val) => {
+          return city[0].city.city === val.city;
+        });
+        setPlan(x[0].residentioal.month1);
+      } else {
+        month3.current.className = "";
+        month6.current.className = "";
+        month12.current.className = "";
+        month1.current.className = "active-duration-type";
+        let x = plans.filter((val) => {
+          return city[0].city.city === val.city;
+        });
+        setPlan(x[0].commercial.month1);
+      }
     } else if (e.target.innerText === "3 MONTH") {
-      month1.current.className = "";
-      month6.current.className = "";
-      month12.current.className = "";
-      month3.current.className = "active-duration-type";
-      let x = plans.filter((val) => {
-        return city[0].city.city === val.city;
-      });
-      setPlan(x[0].month3);
-      console.log(x[0].month3);
+      if (filterdetails.connectiontype === "RESIDENTIOAL") {
+        month1.current.className = "";
+        month6.current.className = "";
+        month12.current.className = "";
+        month3.current.className = "active-duration-type";
+        let x = plans.filter((val) => {
+          return city[0].city.city === val.city;
+        });
+        setPlan(x[0].residentioal.month3);
+        console.log(filterdetails);
+      } else {
+        month1.current.className = "";
+        month6.current.className = "";
+        month12.current.className = "";
+        month3.current.className = "active-duration-type";
+        let x = plans.filter((val) => {
+          return city[0].city.city === val.city;
+        });
+        setPlan(x[0].commercial.month3);
+        console.log(x[0].commercial.month3);
+        console.log(filterdetails);
+      }
     } else if (e.target.innerText === "6 MONTH") {
-      month1.current.className = "";
-      month3.current.className = "";
-      month12.current.className = "";
-      month6.current.className = "active-duration-type";
-      let x = plans.filter((val) => {
-        return city[0].city.city === val.city;
-      });
-      setPlan(x[0].month6);
-      console.log(x[0].month6);
+      if (filterdetails.connectiontype === "RESIDENTIOAL") {
+        month1.current.className = "";
+        month3.current.className = "";
+        month12.current.className = "";
+        month6.current.className = "active-duration-type";
+        let x = plans.filter((val) => {
+          return city[0].city.city === val.city;
+        });
+        setPlan(x[0].residentioal.month6);
+      } else {
+        month1.current.className = "";
+        month3.current.className = "";
+        month12.current.className = "";
+        month6.current.className = "active-duration-type";
+        let x = plans.filter((val) => {
+          return city[0].city.city === val.city;
+        });
+        setPlan(x[0].commercial.month6);
+      }
     } else {
-      month1.current.className = "";
-      month3.current.className = "";
-      month6.current.className = "";
-      month12.current.className = "active-duration-type";
-      let x = plans.filter((val) => {
-        return city[0].city.city === val.city;
-      });
-      setPlan(x[0].month12);
-      console.log(x[0].month12);
+      if (filterdetails.connectiontype === "RESIDENTIOAL") {
+        month1.current.className = "";
+        month3.current.className = "";
+        month6.current.className = "";
+        month12.current.className = "active-duration-type";
+        let x = plans.filter((val) => {
+          return city[0].city.city === val.city;
+        });
+        setPlan(x[0].residentioal.month12);
+      } else {
+        month1.current.className = "";
+        month3.current.className = "";
+        month6.current.className = "";
+        month12.current.className = "active-duration-type";
+        let x = plans.filter((val) => {
+          return city[0].city.city === val.city;
+        });
+        setPlan(x[0].commercial.month12);
+      }
     }
   };
   return (
@@ -271,13 +342,19 @@ const Home = () => {
         Broadband Plans For {city[0].city.city}
       </div>
       <div className="plan-middle-banner-one">
-        <span style={{ marginRight: "12px", textAlign: "center" }}>
+        <span
+          style={{
+            marginRight: "12px",
+            textAlign: "center",
+            paddingLeft: "5px",
+          }}
+        >
           All new Truly Unlimited Fiber Broadband plans for
         </span>
         <Select
           options={options}
           styles={styles}
-          placeholder={"Hyderabad"}
+          placeholder={"Raipur"}
           onChange={handleFilterChange}
         />
       </div>

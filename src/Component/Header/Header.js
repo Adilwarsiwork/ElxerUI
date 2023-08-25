@@ -42,29 +42,29 @@ const Header = () => {
           </span>
         </div>
         <div>
-          <ul className="navMenu">
-            <li className="menuItem">
-              <NavLink to={"/"}>Home</NavLink>
-            </li>
-            <li className="menuItem">
-              <NavLink to={"/corporate"}>Business</NavLink>{" "}
-            </li>
-            <li className="menuItem">
-              <NavLink to="/packages">Plans</NavLink>
-            </li>
-            <li className="menuItem">
-              <NavLink to={"/support"}>Support</NavLink>
-            </li>
-            <li className="menuItem">
-              <NavLink to={"/contact"}>Contact Us</NavLink>
-            </li>
-            <li className=" butttons">
-              <NavLink to={"/pay-recharge"}>Pay & Recharge</NavLink>
-            </li>
-            <li className=" butttons">
-              <NavLink to={"/new-connection"}>New Connection </NavLink>
-            </li>
-          </ul>
+          <nav className="navMenu">
+            <NavLink to={"/"} className="menuItem">
+              Home
+            </NavLink>
+            <NavLink to={"/corporate"} className="menuItem">
+              Business
+            </NavLink>{" "}
+            <NavLink to={"/packages"} className="menuItem">
+              Plans
+            </NavLink>
+            <NavLink to={"/support"} className="menuItem">
+              Support
+            </NavLink>
+            <NavLink to={"/contact"} className="menuItem">
+              Contact Us
+            </NavLink>
+            <NavLink className="butttons" to={"/pay-recharge"}>
+              Pay & Recharge
+            </NavLink>
+            <NavLink className="butttons" to={"/new-connection"}>
+              New Connection
+            </NavLink>
+          </nav>
         </div>
       </div>
     </header>

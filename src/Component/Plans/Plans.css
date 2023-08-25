@@ -41,6 +41,7 @@
 
 .plan-middle-banner-two > p {
   text-align: center;
+  padding-inline: 5px;
 }
 
 .plan-middle-banner-filter {
@@ -61,6 +62,9 @@
   border: 2px solid #bdc1c7;
   border-radius: 20px;
 }
+.plan-middle-banner-connectiontype > span:hover {
+  cursor: pointer;
+}
 
 .plan-middle-banner-connectiontype {
   display: flex;
@@ -75,7 +79,9 @@
   border: 2px solid #bdc1c7;
   border-radius: 20px;
 }
-
+.plan-middle-banner-planduration > span:hover {
+  cursor: pointer;
+}
 .plan-middle-banner-planduration {
   display: flex;
   align-items: center;

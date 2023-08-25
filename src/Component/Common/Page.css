@@ -5,6 +5,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 .page-box > h1 {
   font-size: 48px;
@@ -18,4 +19,21 @@
   color: #0077db;
   padding-inline: 8px;
   cursor: pointer;
+}
+@media screen and (max-width: 768px) {
+  .header-top {
+    padding-inline: 0;
+  }
+  .header-bottom {
+    height: 11rem;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.2rem;
+  }
+  .navMenu {
+    justify-content: space-around;
+    flex-wrap: wrap;
+    font-size: 16px;
+    gap: 14.2px;
+  }
 }
