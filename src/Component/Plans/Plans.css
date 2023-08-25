@@ -1,0 +1,238 @@
+.plan-upper-banner {
+  height: 6rem;
+  padding-inline: 3.5rem;
+
+  background-color: #eaf0f8;
+
+  display: flex;
+  align-items: center;
+
+  font-family: "Montserrat", "Helvetica", "Arial", sans-serif;
+  line-height: 44px;
+  font-size: 26px;
+  font-weight: 700;
+  columns: #173b5a;
+}
+
+.plan-middle-banner-one {
+  margin-top: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-family: "Montserrat", "Helvetica", "Arial", sans-serif;
+  line-height: 42px;
+  font-size: 28px;
+  font-weight: 700;
+  color: #233141;
+}
+
+.plan-middle-banner-two {
+  margin-top: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-family: "Nunito", "Helvetica", "Arial", sans-serif !important;
+  font-size: 20px;
+  line-height: 30px;
+  color: #233141;
+}
+
+.plan-middle-banner-two > p {
+  text-align: center;
+}
+
+.plan-middle-banner-filter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2.7rem;
+  font-family: "Nunito", "Helvetica", "Arial", sans-serif !important;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.plan-middle-banner-connectiontype > span {
+  padding-inline: 17px;
+  padding-block: 7px;
+  border: 2px solid #bdc1c7;
+  border-radius: 20px;
+}
+
+.plan-middle-banner-connectiontype {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.plan-middle-banner-planduration > span {
+  padding-inline: 17px;
+  padding-block: 7px;
+  border: 2px solid #bdc1c7;
+  border-radius: 20px;
+}
+
+.plan-middle-banner-planduration {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.plan-middle-banner-filter span {
+  transition: all ease-in-out 0.35s;
+}
+
+.plan-middle-banner-filter span:hover {
+  background-color: #0077db;
+  color: #fff;
+}
+
+.active-connection-type {
+  background-color: #0077db;
+  color: #fff;
+}
+.active-duration-type {
+  background-color: #0077db;
+  color: #fff;
+}
+.plan-box {
+  display: flex;
+  justify-content: flex-start;
+  margin-inline: 10%;
+  padding-left: 15px;
+}
+
+.carousel-container > .react-multi-carousel-track {
+  padding-left: 0%;
+}
+
+.entertainment-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  word-wrap: break-word;
+
+  margin-top: 3rem;
+  gap: 8px;
+  font-size: 16px;
+  line-height: 24px;
+  color: #233141;
+  font-weight: 400;
+}
+
+.entertainment-details > span {
+  font-size: 16px;
+  line-height: 24px;
+  color: #233141;
+  font-weight: 700;
+}
+
+.broadband-description {
+  margin-top: 3.5rem;
+  padding-block: 2rem;
+  background-color: #eaf0f8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.28rem;
+}
+.broadband-description > .heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 24px;
+  line-height: 36px;
+  color: #233141;
+  font-family: "Montserrat", "Helvetica", "Arial", sans-serif;
+}
+
+.description-one,
+.description-two {
+  padding-inline: 18%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+
+  font-size: 16px;
+  line-height: 24px;
+  color: #233141;
+}
+
+.terms-conditions {
+  padding-inline: 12.8%;
+  margin-top: 3rem;
+}
+
+.tncheadding {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #233141;
+  margin-bottom: 1.25rem;
+}
+
+.liacircle {
+  font-size: 10px;
+  margin-right: 10px;
+}
+
+.terms-conditions {
+  font-size: 16px;
+  line-height: 24px;
+  color: #233141;
+}
+
+.tnc-points {
+  display: flex;
+  align-items: center;
+  margin-block: 5px;
+}
+
+@media screen and (max-width: 1040px) {
+  .plan-middle-banner-one {
+    flex-direction: column;
+  }
+
+  .plan-middle-banner-filter {
+    flex-direction: column;
+  }
+  .entertainment-details {
+    gap: 8px;
+    padding-inline: 8px;
+  }
+  .liacircle {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .plan-upper-banner {
+    font-size: 22px;
+    height: 5rem;
+  }
+  .plan-middle-banner-one {
+    font-size: 24px;
+  }
+  .plan-middle-banner-two {
+    font-size: 17px;
+    padding-inline: 8px;
+  }
+  .plan-middle-banner-filter {
+    font-size: 13px;
+  }
+  .broadband-description > .heading {
+    font-size: 20px;
+  }
+  .terms-conditions {
+    font-size: 13.8px;
+  }
+}

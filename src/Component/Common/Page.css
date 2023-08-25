@@ -1,0 +1,21 @@
+.page-box {
+  width: 100%;
+  height: 68.8vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.page-box > h1 {
+  font-size: 48px;
+  color: #0077db;
+}
+.page-box > h3 {
+  font-size: 28px;
+  color: #233141;
+}
+.page-box > h3 > span {
+  color: #0077db;
+  padding-inline: 8px;
+  cursor: pointer;
+}

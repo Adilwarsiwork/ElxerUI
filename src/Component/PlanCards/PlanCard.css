@@ -1,0 +1,199 @@
+/* .plan-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding-inline: 3.5rem;
+} */
+
+.plan-cards {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  align-items: center;
+  gap: 10px;
+
+  border: 2px solid #bdc1c7;
+  border-radius: 5px;
+
+  margin-top: 2.8rem;
+  margin-bottom: 3.5rem;
+  width: 12.5rem;
+  height: 340px;
+
+  padding-block: 18px;
+  transition: all ease-in-out 0.5s;
+}
+
+.plan-cards:hover {
+  transform: scale(1.15);
+  border: 2px solid black;
+}
+
+.go-circle {
+  font-size: 25px;
+}
+
+.plan-catagory {
+  color: #233141;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.bandwidth {
+  font-family: "Montserrat", "Helvetica", "Arial", sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 31px;
+  color: #233141;
+}
+
+.plan-price {
+  font-size: 19px;
+  line-height: 24px;
+  color: #233141;
+  font-weight: 700;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.plan-price > .rupee-symbol {
+  font-size: 22px;
+}
+
+.plan-discount {
+  font-size: 17px;
+  line-height: 24px;
+  color: #233141;
+  font-weight: 700;
+
+  display: flex;
+  justify-content: center;
+}
+
+.plan-discount > .rupee-symbol {
+  font-size: 20px;
+}
+.plan-discount > span {
+  margin-left: 3px;
+
+  border-radius: 5px;
+  padding-inline: 5px;
+  font-size: 11px;
+  line-height: 24px;
+  color: #fff;
+  background-color: red;
+  font-weight: 700;
+}
+
+.plan-duration,
+.data-limit {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #233141;
+}
+
+.ott-details {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #233141;
+}
+
+.ott-label {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #08ca73;
+  color: #fff;
+  font-size: 12.5px;
+  font-weight: 700;
+  border-radius: 2px;
+  padding: 3px 6px 3px 6px;
+}
+
+@media screen and (max-width: 1040px) {
+  .plan-cards {
+    width: 11.8rem;
+    height: 332px;
+  }
+  .go-circle {
+    font-size: 23px;
+  }
+  .plan-catagory {
+    font-size: 16px;
+  }
+  .bandwidth {
+    font-size: 21px;
+  }
+  .plan-price {
+    font-size: 18px;
+  }
+  .plan-price > .rupee-symbol {
+    font-size: 21px;
+  }
+  .plan-discount {
+    font-size: 16px;
+  }
+  .plan-discount > .rupee-symbol {
+    font-size: 19px;
+  }
+  .plan-discount > span {
+    font-size: 10px;
+  }
+  .plan-duration,
+  .data-limit {
+    font-size: 15px;
+  }
+  .ott-details {
+    font-size: 15px;
+  }
+  .ott-label {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .plan-cards {
+    width: 11rem;
+    height: 320px;
+  }
+  .go-circle {
+    font-size: 22px;
+  }
+  .plan-catagory {
+    font-size: 15px;
+  }
+  .bandwidth {
+    font-size: 20px;
+  }
+  .plan-price {
+    font-size: 17px;
+  }
+  .plan-price > .rupee-symbol {
+    font-size: 20px;
+  }
+  .plan-discount {
+    font-size: 15px;
+  }
+  .plan-discount > .rupee-symbol {
+    font-size: 18px;
+  }
+  .plan-discount > span {
+    font-size: 9px;
+  }
+  .plan-duration,
+  .data-limit {
+    font-size: 14px;
+  }
+  .ott-details {
+    font-size: 14px;
+  }
+  .ott-label {
+    font-size: 11px;
+  }
+}
