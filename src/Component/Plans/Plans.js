@@ -342,7 +342,6 @@ const Home = () => {
         swipeable={true}
         draggable={true}
         showDots={true}
-        infinite={true}
         responsive={responsive}
         customTransition="all 0.7s"
         transitionDuration={800}
