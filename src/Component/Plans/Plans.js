@@ -36,7 +36,7 @@ const Home = () => {
       },
     },
   ]);
-  const [plan, setPlan] = useState(plans[2]?.month1);
+  const [plan, setPlan] = useState(plans[1]?.month1);
   // console.log(plan.length);
 
   useEffect(() => {
