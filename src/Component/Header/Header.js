@@ -58,12 +58,22 @@ const Header = () => {
             <NavLink to={"/contact"} className="menuItem">
               Contact Us
             </NavLink>
-            <NavLink className="butttons" to={"/pay-recharge"}>
+            <span
+              className="butttons"
+              onClick={() => {
+                navigate("/pay-recharge");
+              }}
+            >
               Pay & Recharge
-            </NavLink>
-            <NavLink className="butttons" to={"/new-connection"}>
+            </span>
+            <span
+              className="butttons"
+              onClick={() => {
+                navigate("/new-connection");
+              }}
+            >
               New Connection
-            </NavLink>
+            </span>
           </nav>
         </div>
       </div>
